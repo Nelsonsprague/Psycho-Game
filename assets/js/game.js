@@ -11,6 +11,7 @@ var winsText = document.getElementById("wins");
 var lossesText = document.getElementById("losses")
 var guessLeftText = document.getElementById("guessLeft");
 var userGuessText = document.getElementById("userGuess");
+var wrongGuess = [];
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 console.log(computerGuess)
 
@@ -31,6 +32,8 @@ console.log(validGuess.indexOf(userGuess))
             guessLeft = 10;
     }else{
         guessLeft--;
+        wrongGuess.push(userGuess)
+        console.log(wrongGuess)
         
         if(guessLeft === 0){
             losses++;
@@ -45,6 +48,6 @@ console.log(validGuess.indexOf(userGuess))
     
     winsText.textContent = wins;
     lossesText.textContent = losses;
-userGuessText.textContent = userGuess;
+userGuessText.textContent = wrongGuess;
 guessLeftText.textContent = guessLeft;
 };
