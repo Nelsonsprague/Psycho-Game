@@ -17,7 +17,7 @@ console.log(computerGuess)
 
 document.onkeyup = function(event) {
     var userGuess = event.key;
-console.log(validGuess.indexOf(userGuess))
+
     
     //  index of 
     
@@ -30,6 +30,7 @@ console.log(validGuess.indexOf(userGuess))
             computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
             console.log(computerGuess)
             guessLeft = 10;
+            wrongGuess = [];
     }else{
         guessLeft--;
         wrongGuess.push(userGuess)
@@ -39,6 +40,7 @@ console.log(validGuess.indexOf(userGuess))
             losses++;
             guessLeft = 10;
             computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+            wrongGuess = [];
         }
     }
 
