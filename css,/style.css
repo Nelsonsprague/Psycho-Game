@@ -19,9 +19,10 @@ body{
 }
 
 .container{
-    background-color: white;
-    opacity: 75;
+    background-color: aliceblue;
+    opacity: .60;
     padding: 20px;
     margin: 0 auto;
     width: 80%;
+    
 }
