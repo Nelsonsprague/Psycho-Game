@@ -33,7 +33,7 @@ document.onkeyup = function(event) {
             wrongGuess = [];
     }else{
         guessLeft--;
-        wrongGuess.push(userGuess)
+        wrongGuess.push(" "+userGuess)
         console.log(wrongGuess)
         
         if(guessLeft === 0){

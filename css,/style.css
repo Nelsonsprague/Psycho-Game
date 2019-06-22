@@ -1,0 +1,27 @@
+h1,
+h2,
+p{
+    text-align: center;
+    color: blue;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 36px;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24;
+}
+body{
+    background-image: url("../images/planets.jpg")
+}
+
+.container{
+    background-color: white;
+    opacity: 75;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+}
